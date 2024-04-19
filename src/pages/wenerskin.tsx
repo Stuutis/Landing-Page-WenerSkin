@@ -23,8 +23,8 @@ import verticalBlueFlash from "../assets/verticalBlueFlash.png";
 import clodoaldo from "../assets/clodoaldo.jpg";
 
 import { Button } from "../components/button";
-import { Calendar } from "../components/calendar";
-import { Location } from "../components/location";
+import { Calendar } from "../assets/svg/calendar";
+import { Location } from "../assets/svg/location";
 import { Divulgation } from "../components/divulgation";
 import { Batches } from "../components/batches";
 import { AboutImage } from "../components/aboutImage";

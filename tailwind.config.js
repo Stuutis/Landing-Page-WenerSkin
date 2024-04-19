@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'clodoaldobg': "url('./assets/clodoaldoBg.jpg')"
+        'clodoaldobg': "url('./assets/clodoaldoBg.jpg')",
+
       }
     },
   },
