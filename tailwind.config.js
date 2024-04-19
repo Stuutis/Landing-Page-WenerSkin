@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'clodoaldobg': "url('./assets/clodoaldoBg.jpg')"
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar')
