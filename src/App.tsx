@@ -5,8 +5,8 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/wenerskin" element={<Wenerskin />} />
         <Route path="/" element={<Zeropreenchedor />} />
+        <Route path="/wenerskin/" element={<Wenerskin />} />
       </Routes>
     </BrowserRouter>
   );

@@ -8,7 +8,7 @@ interface BatchesProps {
 
 export function Batches({ batche, date, actived }: BatchesProps) {
   return (
-    <div className="flex justify-start items-center gap-7 py-4 xl:gap-20  z-10">
+    <div className="flex justify-start items-center gap-7 py-4 lg:gap-40  xl:gap-20  z-10">
       <div className="flex flex-col items-left justify-center">
         <p
           className={

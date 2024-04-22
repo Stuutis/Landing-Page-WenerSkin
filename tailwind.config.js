@@ -8,9 +8,11 @@ export default {
     extend: {
       backgroundImage: {
         'clodoaldobg': "url('./assets/clodoaldoBg.jpg')",
-
-      }
+      },
     },
+    fontFamily: {
+      'body': ['Barlow', 'sans-serif']
+    }
   },
   plugins: [
     require('tailwind-scrollbar')

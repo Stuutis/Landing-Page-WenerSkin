@@ -1,12 +1,16 @@
-export function MedicineLogo() {
+interface MedicineLogoProps {
+  size: string;
+}
+
+export function MedicineLogo({ size }: MedicineLogoProps) {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center ">
       <svg
-        height="80"
+        height={size}
         preserveAspectRatio="xMidYMid meet"
         version="1.0"
         viewBox="0.0 -15.2 1663.5 1521.6"
-        width="80"
+        width={size}
         zoomAndPan="magnify"
       >
         <defs>

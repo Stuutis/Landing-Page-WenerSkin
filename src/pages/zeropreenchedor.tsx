@@ -1,5 +1,5 @@
 import { RoundedButton } from "../components/roundedButton";
-import { MedicineLogo } from "../assets/svg/medicineLogo";
+
 import fotonaLogo from "../assets/FotonaLogo.png";
 import yellowFlash from "../assets/yellowFlash.png";
 import clodoaldo from "../assets/clodoaldo.jpg";
@@ -8,14 +8,16 @@ import { Batches } from "../components/batches";
 import { Calendar } from "../assets/svg/calendar";
 import { RedLocation } from "../assets/svg/redLocation";
 import flashLights from "../assets/flashLights.png";
+import { TextMedicineLogo } from "../components/textMedicineLogo";
 
 export function Zeropreenchedor() {
   return (
-    <div className="bg-black text-white overflow-x-hidden ">
+    <div className=" bg-black text-white overflow-x-hidden font-body">
       <aside className="  h-[90vh] relative">
-        <span className="bg-black opacity-60 absolute z-[5] h-[90vh] w-full"></span>
+        <span className="bg-black opacity-60 absolute z-[5] h-[90vh] w-full "></span>
         <div className="bg-clodoaldobg bg-center flex flex-col justify-between items-center h-full">
           <a
+            target="_blank"
             href="https://www.instagram.com/zero_preenchedor?igsh=MTQ1bXBpc2p4ZDZyYQ=="
             className="text-3xl mt-20 z-10 font-bold"
           >
@@ -39,39 +41,54 @@ export function Zeropreenchedor() {
         </div>
       </aside>
 
-      <aside className="bg-black py-10 px-5 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-32 xl:px-48 2xl:px-80">
-        <div className="flex flex-col gap-5">
-          <MedicineLogo />
-          <h1 className="font-bold text-2xl">
-            Médico, vou te contar o segredo do meu sucesso:
-          </h1>
-          <div className="flex items-end justify-end my-10 lg:w-11/12">
-            <RoundedButton />
+      <aside className="bg-black py-10 px-5 lg:flex lg:flex-col lg:justify-center lg:items-center ">
+        <div className="flex flex-col gap-5 ">
+          <div className="lg:flex lg:justify-center lg:items-center lg:gap-10 lg:px-20 ">
+            <div>
+              <h1 className="font-bold text-2xl ">
+                Médico, vou te contar o segredo do meu sucesso:
+              </h1>
+              <div className="flex items-end justify-center my-10 lg:w-11/12 ">
+                <RoundedButton />
+              </div>
+              <WenerskinLogo />
+            </div>
+            <div>
+              <div className="relative flex flex-col gap-10 text-xl text-left mt-10">
+                <TextMedicineLogo
+                  hasLogo
+                  text="Resultados com alto índice de satisfação"
+                />
+                <TextMedicineLogo
+                  text="Como diminuir ou abolir o uso de toxína no seu paciente"
+                  hasLogo
+                />
+                <TextMedicineLogo
+                  text="Lucratividade como nenhum outro"
+                  hasLogo
+                />
+                <img
+                  className="absolute bottom-0 -right-20 opacity-50 h-full"
+                  src={yellowFlash}
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-          <WenerskinLogo />
-          <MedicineLogo />
-          <div className="relative flex flex-col gap-10 font-bold text-xl text-left">
-            <p>Resultados com alto índice de satisfação</p>
-            <p>Como diminuir ou abolir o uso de toxína no seu paciente</p>
-            <p>Lucratividade como nenhum outro</p>
+          <div className="flex flex-col items-center md:flex-row lg:flex-row lg:gap-3 lg:px-10">
             <img
-              className="absolute bottom-0 -right-20 opacity-50 h-full"
-              src={yellowFlash}
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col px-5 items-center lg:flex-row-reverse lg:gap-3 ">
-            <img
-              className="rounded-lg md:h-1/2 md:w-1/2"
+              className="rounded-lg sm:w-1/2 md:h-1/2 md:w-1/2 lg:w-1/3"
               src={clodoaldo}
               alt=""
             />
 
-            <div className="mt-5 flex flex-col justify-center text-left text-slate-200">
+            <div className="mt-5 flex flex-col justify-center text-left text-zinc-100 bg-neutral-900 w-screen px-5 py-5 md:bg-transparent">
               <WenerskinLogo />
+
               <p className="mt-2 font-bold text-2xl">
                 Prazer, meu nome é clodoaldo de Oliveira.
               </p>
+
               <br />
 
               <p>Eu tenho uma experiência de sucesso para te contar. </p>
@@ -120,31 +137,35 @@ export function Zeropreenchedor() {
             </div>
           </div>
         </div>
+      </aside>
 
-        <div className="md:grid grid-cols-3">
-          <div className=" grid grid-cols-1 divide-y-2 divide-y-reverse relative px-10 md:col-span-2 lg:mt-10">
-            <img
-              className="absolute z-0 h-full w-full"
-              src={flashLights}
-              alt=""
-            />
-            <Batches actived batche="Lote 1" date="Até 09/04/24" />
-            <Batches batche="Lote 2" date="Até 15/05/24" />
-            <Batches batche="Lote 3" date="Após 16/05/24" />
+      <footer className="md:grid grid-cols-3 relative w-screen mt-5">
+        <div className=" grid grid-cols-1  w-screen divide-y-reverse relative px-10 md:col-span-2 lg:mt-10 lg:divide-y-0">
+          <img
+            className="absolute z-0 h-full w-full"
+            src={flashLights}
+            alt=""
+          />
+          <Batches actived batche="Lote 1" date="Até 09/04/24" />
+          <Batches batche="Lote 2" date="Até 15/05/24" />
+          <Batches batche="Lote 3" date="Após 16/05/24" />
+        </div>
+
+        <div
+          className="bg-neutral-900 p-5 right-10 sm:absolute sm:bg-transparent flex flex-col gap-4 font-bold mt-6  bottom-0 md:justify-center 
+           lg:-top-10 lg:text-md lg:text-left 2xl:text-xl "
+        >
+          <div className="flex items-center gap-4">
+            <Calendar />
+            <p>09/06/24 e 10/06/24</p>
           </div>
-
-          <div className="flex flex-col gap-4 font-bold mt-6 md:justify-center lg:text-md lg:text-left">
-            <div className="flex items-center gap-4">
-              <Calendar />
-              <p>09/06/24 e 10/06/24</p>
-            </div>
-            <div className="flex items-center gap-8">
-              <RedLocation />
-              Edifício Murano na Alameda Grajaú 129 - Alphaville - Barueri - SP
-            </div>
+          <div className="flex items-center gap-8">
+            <RedLocation />
+            Edifício Murano na Alameda Grajaú 129 <br />
+            Alphaville - Barueri - SP
           </div>
         </div>
-      </aside>
+      </footer>
     </div>
   );
 }
