@@ -11,7 +11,7 @@ export function Divulgation({ image, title, text, ...props }: Divulgation) {
     <div className="flex flex-col max-w-64 gap-4 items-center z-10">
       <img
         {...props}
-        className="max-w-64 max-h-64 rounded-2xl md:w-1/2 md:h-1/2"
+        className="w-full max-w-64 max-h-64 rounded-2xl md:w-full md:h-1/2"
         src={image}
         alt=""
       />

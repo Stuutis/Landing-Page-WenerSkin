@@ -43,7 +43,7 @@ export function Zeropreenchedor() {
 
       <aside className="bg-black py-10 px-5 lg:flex lg:flex-col lg:justify-center lg:items-center ">
         <div className="flex flex-col gap-5 ">
-          <div className="lg:flex lg:justify-center lg:items-center lg:gap-10 lg:px-20 ">
+          <div className="lg:flex lg:justify-center lg:items-center lg:gap-10 lg:px-40 ">
             <div>
               <h1 className="font-bold text-2xl ">
                 Médico, vou te contar o segredo do meu sucesso:
@@ -75,18 +75,18 @@ export function Zeropreenchedor() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center md:flex-row lg:flex-row lg:gap-3 lg:px-10">
+          <div className="flex flex-col items-center  md:flex-row lg:gap-3 lg:px-10 2xl:justify-center">
             <img
-              className="rounded-lg sm:w-1/2 md:h-1/2 md:w-1/2 lg:w-1/3"
+              className="rounded-lg sm:w-1/2 lg:ml-20 md:h-1/2 md:w-1/2  lg:w-1/3 2xl:h-[60vh] "
               src={clodoaldo}
               alt=""
             />
 
-            <div className="mt-5 flex flex-col justify-center text-left text-zinc-100 bg-neutral-900 w-screen px-5 py-5 md:bg-transparent">
+            <div className="mt-5 flex flex-col justify-center text-left text-zinc-100 bg-neutral-900 w-screen px-5 py-5 md:bg-transparent lg:pr-24 2xl:max-w-[60vw]">
               <WenerskinLogo />
 
               <p className="mt-2 font-bold text-2xl">
-                Prazer, meu nome é clodoaldo de Oliveira.
+                Prazer, meu nome é Clodoaldo de Oliveira.
               </p>
 
               <br />
