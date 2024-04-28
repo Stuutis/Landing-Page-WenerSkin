@@ -383,8 +383,8 @@ export function Wenerskin() {
               src={verticalBlueFlash}
               alt=""
             />
-            <Batches actived batche="Primeiro lote" date="Até 09/04/24" />
-            <Batches batche="Segundo lote" date="Até 15/05/24" />
+            <Batches disabled batche="Primeiro lote" date="Até 09/04/24" />
+            <Batches actived batche="Segundo lote" date="Até 15/05/24" />
             <Batches batche="Terceiro lote" date="Até 16/05/24" />
           </div>
 

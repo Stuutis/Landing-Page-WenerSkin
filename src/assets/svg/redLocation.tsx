@@ -18,9 +18,9 @@ export function RedLocation() {
           y1="41.28"
           y2="41.28"
         >
-          <stop offset=".01" stop-color="#f7232f" />
-          <stop offset=".47" stop-color="#ff525b" />
-          <stop offset="1" stop-color="#d60018" />
+          <stop offset=".01" stopColor="#f7232f" />
+          <stop offset=".47" stopColor="#ff525b" />
+          <stop offset="1" stopColor="#d60018" />
         </linearGradient>
         <linearGradient id="b" x1="33.06" x2="59.78" y1="50" y2="50" />
         <linearGradient id="c" x1="35.42" x2="66.94" y1="50.74" y2="50.74" />

@@ -24,11 +24,11 @@ export function Zeropreenchedor() {
             @zero_preenchedor
           </a>
           <p
-            className="flex gap-1 font-bold text-2xl flex-wrap items-center justify-center z-10 mt-40 lg:text-4xl
+            className="flex gap-1 font-bold text-2xl flex-wrap items-center justify-center z-10 mt-40 text-center lg:text-4xl
           "
           >
-            Aprenda o método <p className="text-red-700">Wenerskin</p> com o Dr
-            Clodoaldo de Oliveira
+            Aprenda o método <span className="text-red-700">Wenerskin</span> com
+            o Dr Clodoaldo de Oliveira
           </p>
           <div className="flex flex-col items-center justify-center w-full z-10 gap-4">
             <RoundedButton />
