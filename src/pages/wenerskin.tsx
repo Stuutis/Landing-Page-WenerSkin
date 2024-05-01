@@ -180,7 +180,7 @@ export function Wenerskin() {
               alt=""
             />
             <img
-              className="absolute -bottom-10 -left-10 sm:-left-24 md:w-24 md:h-20 md:-bottom-10 lg:left-40 xl:-bottom-16 xl:left-20"
+              className="absolute -bottom-10 left-10 sm:left-10 md:w-24 md:h-20 md:-bottom-20 lg:left-40 xl:-bottom-16 xl:left-20"
               src={FotonaLogo}
               alt=""
             />
@@ -219,7 +219,7 @@ export function Wenerskin() {
                   </li>
                 </ul>
               </div>
-              <div className="w-full">
+              <div className="w-full flex flex-col items-center">
                 <div
                   className="flex gap-4
             md:grid md:grid-cols-3 md:gap-10  md:mr-10 "
